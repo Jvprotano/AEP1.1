@@ -7,23 +7,24 @@ $(function(){
     	loading.hide();
     });
     
-    $("label.btn").on('click',function () {
-    	var choice = $(this).find('input:radio').val();
+    $("#Enviar").on('click',function () {
+    	var choice = $("label.btn.active").find('input:radio').val();
     	$('#loadbar').show();
-    	$('#quiz').fadeOut();
+        $('#quiz').fadeOut();
+        $('#Enviar').fadeOut();
     	setTimeout(function(){
            $( "#answer" ).html(  $(this).checking(choice) );      
             $('#quiz').show();
             $('#loadbar').fadeOut();
-           /* something else */
+            $('#Enviar').show();
     	}, 1500);
     });
 
-    $ans = 3;
+    $ans = 3; //Posição da resposta correta 
 
     $.fn.checking = function(ck) {
         if (ck != $ans)
-            return 'INCORRECT';
+            return 'INCORRET';
         else 
             return 'CORRECT';
     }; 

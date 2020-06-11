@@ -155,14 +155,16 @@
   }
   
   .modal-body {
-      min-height: 205px;
+      min-height: 300px;
       background-color: transparent;
+      
   }
   #loadbar {
-      position: absolute;
+      position: relative;
       width: 62px;
       height: 77px;
-      top: 2em
+      left: 200px;
+      top: 5em
   }
   .blockG {
       position: absolute;
