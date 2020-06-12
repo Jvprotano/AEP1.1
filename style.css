@@ -25,3 +25,9 @@ html{
 body{
     background-color: #000a25;
 }
+
+#acertou{
+    position: absolute;
+    display: none;
+    
+}

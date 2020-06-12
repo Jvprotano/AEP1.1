@@ -1,19 +1,20 @@
+
 $(function(){
     var loading = $('#loadbar').hide();
     $(document)
-    .ajaxStart(function () {
+    .ajaxStart(function() {
         loading.show();
     }).ajaxStop(function () {
     	loading.hide();
     });
     
-    $("#Enviar").on('click',function () {
+    $("#Enviar").on('click',function() {
     	var choice = $("label.btn.active").find('input:radio').val();
     	$('#loadbar').show();
         $('#quiz').fadeOut();
         $('#Enviar').fadeOut();
     	setTimeout(function(){
-           $( "#answer" ).html(  $(this).checking(choice) );      
+           $( "#answer" ).html(  $(this).checking(choice) );  
             $('#quiz').show();
             $('#loadbar').fadeOut();
             $('#Enviar').show();
@@ -24,8 +25,10 @@ $(function(){
 
     $.fn.checking = function(ck) {
         if (ck != $ans)
-            return 'INCORRET';
+            return 'INCORRETO';
         else 
-            return 'CORRECT';
-    }; 
-});	
+            nextlevel();
+            return 'CORRETO'
+                       }; 
+});
+	
