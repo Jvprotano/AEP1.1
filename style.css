@@ -1,16 +1,11 @@
 
 .bg-info{
-    background-image: url("https://uploaddeimagens.com.br/images/002/675/959/full/morenopqn.jpg?1590629197");
-    background-color: #330000!important;
-    background-repeat: no-repeat;
-    background-size: 1350px 500px;
-}
-
-#cabecalho{
-    background-image: url("https://i.ibb.co/8zXFZN1/header150.jpg");
-    height: 150px;
-    width: 1350px;
-    background-size: cover;
+   background-color: #010b26!important;
+   background-image: url("https://i.ibb.co/FwhbWv4/bd1-2.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100%;
 }
 
 #Enviar{  
@@ -21,6 +16,10 @@
 
 html{
     background-color: #000a25;
+    background-image: url("https://i.ibb.co/FwhbWv4/bd1-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 body{
     background-color: #000a25;
@@ -29,5 +28,58 @@ body{
 #acertou{
     position: absolute;
     display: none;
-    
+}
+
+body{margin:40px;}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px;
+  font-size: 20px;
+  line-height: 1.33;
+  border-radius: 25px;
+  text-decoration-style: solid;
+  position: absolute;
+}
+
+#azul{
+    left: 10%;
+    bottom: 3%;
+}
+#amare{
+    left: 22%;
+    bottom: 3%;
+}
+#red{
+    left: 34%;
+    bottom: 3%;
+}
+
+#btn-sair{
+    background-color: red;
+    color: white;
+}
+
+#btn-sair-con{
+    background-color: rgb(59, 174, 219);
+    color: white;
+}
+
+#btn-dica{
+    background-color: rgb(112, 4, 4);
+    color: white;
+}
+
+#btn-ajuda{
+    background-color: rgb(112, 4, 4);
+    color: white;
+}
+
+.modal-fade{
+    min-height: 100px;
+}
+
+.modal-title{
+    position: absolute;
 }

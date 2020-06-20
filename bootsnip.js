@@ -18,17 +18,18 @@ $(function(){
             $('#quiz').show();
             $('#loadbar').fadeOut();
             $('#Enviar').show();
-    	}, 1500);
+        }, 1500);
+        
     });
 
-    $ans = 3; //Posição da resposta correta 
+   $ans = 3 //Posição da resposta correta 
 
     $.fn.checking = function(ck) {
         if (ck != $ans)
+
             return 'INCORRETO';
         else 
             nextlevel();
-            return 'CORRETO'
+            return 'CORRETO';
                        }; 
 });
-	

@@ -150,14 +150,19 @@
   }
   
   .modal-header {
-      background-color: transparent;
-      color: inherit
+      background-color: #700404;
+      color: aliceblue;
+      font-style: italic;
   }
   
   .modal-body {
-      min-height: 300px;
+      min-height: 200px;
       background-color: transparent;
       
+  }
+
+  .modal-body#red{
+      min-height: 100px;
   }
   #loadbar {
       position: relative;
@@ -361,5 +366,6 @@
       100% {
           background-color: #FFF
       }
+      
   }
   
